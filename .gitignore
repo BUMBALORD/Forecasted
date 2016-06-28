@@ -15,3 +15,5 @@ ehthumbs.db
 Thumbs.db
 
 config/application.yml
+tmp/cache/assets/sprockets/v3.0
+vendor/assets
