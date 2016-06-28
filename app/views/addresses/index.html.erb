@@ -1,0 +1,22 @@
+<div class="header">
+  <h1> Forecasted </h1>
+</div>
+
+<div class="textentry">
+  <%= form_for :address, url: addresses_path do |f| %>
+  <p>
+    <%= f.label :enter_your_address %><br>
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+</div>
+
+<div class="weather">
+  <h1> Hello!</h1>
+    <h3> The weather where you are is currently: <%= @summary %> </h3>
+  <h4> It is <%= @temp %> degrees </h4>
+</div>
