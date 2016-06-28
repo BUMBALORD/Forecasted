@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+
+.header {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+
+.basic-grey {
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  max-width: 500px;
+  background: #F7F7F7;
+  padding: 25px 15px 25px 10px;
+  font: 16px Georgia, "Times New Roman", Times, serif;
+  color: #888;
+  text-shadow: 1px 1px 1px #FFF;
+  border:1px solid #E4E4E4;
+}
+
+[type=text] {
+  margin: 0 auto;
+  width: 450px;
+  height: 3em;
+}
+
+.textentry {
+  margin: 0 auto;
+}
+
+.weather {
+  text-align: center;
+  margin: 0 auto;
+}
+

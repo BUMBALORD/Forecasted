@@ -18,4 +18,4 @@ config/application.yml
 tmp/cache/assets/sprockets/v3.0
 vendor/assets
 
-/log/*.log
+/log

@@ -7,6 +7,16 @@ class AddressesController < ApplicationController
     currently = response.currently
     @summary = currently.summary
     @temp = currently.temperature
+    @saying = ""
+    if @temp <= 32
+      @saying = "It's freezing out there!"
+    elsif @temp >= 33 && @temp <= 60
+      @saying = "Still might be pretty chilly out there, now!!"
+    elsif @temp >= 61 && @temp <= 85
+      @saying = "It's dang nice out."
+    else
+      @saying = "Oh, man. It's hot as balls!"
+    end
   end
 
   def show
