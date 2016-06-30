@@ -1,23 +1,25 @@
-<div class="header">
-  <h1> Forecasted </h1>
-</div>
+<div class="wrapper">
+  <div class="header">
+    <h1 class="amatica headline"> Forecasted </h1>
+    <p class="amatica larger"> Please enter a country, city, state or address...</p>
+  </div>
 
-<div class="textentry">
-  <%= form_for :address, :html => {:class => "basic-grey"}, url: addresses_path do |f| %>
-  <p>
-    <%= f.label :enter_your_address %><br>
-    <%= f.text_field :address %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+  <div class="textentry">
+    <%= form_for :address, :html => {:class => "basic-grey amatica midsize"}  , url: addresses_path do |f| %>
+    <p>
+      <%= f.text_field :address %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
 
-</div>
+  </div>
 
-<div class="weather">
-  <h1> Hello!</h1>
-    <h3> The forecast there is currently: <%= @summary %> </h3>
-  <h4> It is <%= @temp %> degrees </h4>
-  <h1> <%= @saying  %> </h1>
+  <div class="weather amatica">
+      <h2 class="larger"> Here is the weather for: <%= @address.address %></h2>
+      <h2 class="larger saying"> <%= @saying  %> </h2>
+      <h3 class="larger"> The forecast there is currently: <span class="summary"><%= @summary %></span> </h3>
+    <h3 class="larger"> It is  <span class="temp"><%= @temp %></span> degrees </h3>
+  </div>
 </div>

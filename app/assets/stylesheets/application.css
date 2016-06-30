@@ -14,6 +14,15 @@
  *= require_self
  */
 
+html {
+  background-color: black;
+}
+
+.wrapper {
+  /*position: relative;*/
+  background: #5C97FF;
+  overflow: hidden;
+}
 
 .header {
   text-align: center;
@@ -26,7 +35,7 @@
   margin-right:auto;
   text-align: center;
   max-width: 500px;
-  background: #F7F7F7;
+  background: url('beach.jpg');
   padding: 25px 15px 25px 10px;
   font: 16px Georgia, "Times New Roman", Times, serif;
   color: #888;
@@ -47,5 +56,35 @@
 .weather {
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 2em;
 }
 
+.amatica {
+  font-family: 'Amatica SC', cursive;
+}
+
+.headline {
+  font-size: 8em;
+  color: white;
+}
+
+.larger {
+  font-size: 3em;
+  color: white;
+}
+
+.midsize {
+  font-size: 2em;
+}
+
+.saying {
+  color: yellow;
+}
+
+.summary {
+  color: lightblue;
+}
+
+.temp {
+  color: orange;
+}
