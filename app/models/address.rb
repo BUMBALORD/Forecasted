@@ -4,7 +4,6 @@ class Address < ActiveRecord::Base
   before_save :location_check
 
   def location_check
-    # self.address = self.address.delete(' ') # Apparently this format isn't necessary for Geocoder search anymore...
     location = Geocoder.search(self.address)
     self.latitude = location[0].latitude
     self.longitude = location[0].longitude

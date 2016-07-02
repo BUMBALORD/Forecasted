@@ -7,7 +7,7 @@ class AddressesController < ApplicationController
     currently = response.currently
     @summary = currently.summary
     @temp = currently.temperature
-    # @saying = ""
+    @wind = currently.windSpeed
     if @temp <= 32
       @saying = "It's freezing out there!"
     elsif @temp >= 33 && @temp <= 64
