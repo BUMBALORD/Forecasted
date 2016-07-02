@@ -10,12 +10,12 @@ class AddressesController < ApplicationController
     @saying = ""
     if @temp <= 32
       @saying = "It's freezing out there!"
-    elsif @temp >= 33 && @temp <= 60
+    elsif @temp >= 33 && @temp <= 64
       @saying = "Still might be pretty chilly out there, now!!"
-    elsif @temp >= 61 && @temp <= 85
+    elsif @temp >= 65 && @temp <= 89
       @saying = "It's dang nice out."
     else
-      @saying = "Oh, man. It's hot as balls!"
+      @saying = "Oh, man. It's hot as heck!"
     end
   end
 
